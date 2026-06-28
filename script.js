@@ -22,20 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // 2. Floating CTA Visibility on Scroll
-    const floatingCta = document.getElementById('floating-cta');
-    const heroSection = document.querySelector('.hero-section');
-    
-    window.addEventListener('scroll', () => {
-        // Show floating CTA after scrolling past the hero section
-        if (window.scrollY > heroSection.offsetHeight) {
-            floatingCta.classList.add('visible');
-        } else {
-            floatingCta.classList.remove('visible');
-        }
-    });
-
-    // 3. Smooth Scrolling for anchor links
+    // 2. Smooth Scrolling for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
